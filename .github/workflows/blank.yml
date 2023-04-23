@@ -1,0 +1,45 @@
+import java.util.HashMap;
+
+public class ProgramPlan {
+    public static void main(String[] args) {
+        //1. تعیین اهداف
+        // Define your goals here
+
+        //2. برنامه ریزی زمانی
+        // Determine the time needed for each task/activity
+        HashMap<String, Integer> timeNeeded = new HashMap<String, Integer>();
+        timeNeeded.put("Task 1", 30); //minutes
+        timeNeeded.put("Task 2", 60);
+        timeNeeded.put("Task 3", 90);
+
+        //3. تعیین اولویت ها
+        // Determine the priority of each task/activity
+        HashMap<String, String> priority = new HashMap<String, String>();
+        priority.put("Task 1", "High");
+        priority.put("Task 2", "Medium");
+        priority.put("Task 3", "Low");
+
+        //4. تقسیم کارها
+        // Break down tasks/activities into smaller parts and create a plan for each one
+        HashMap<String, String[]> taskPlan = new HashMap<String, String[]>();
+        taskPlan.put("Task 1", new String[]{"Step 1", "Step 2", "Step 3"});
+        taskPlan.put("Task 2", new String[]{"Step 1", "Step 2", "Step 3", "Step 4"});
+        taskPlan.put("Task 3", new String[]{"Step 1", "Step 2"});
+
+        //5. تنظیم یادآوری ها
+        // Set reminders for each task/activity
+        HashMap<String, String> reminders = new HashMap<String, String>();
+        reminders.put("Task 1", "10 minutes before");
+        reminders.put("Task 2", "30 minutes before");
+        reminders.put("Task 3", "1 hour before");
+
+        //6. تلاش برای الهام بخشی به خود
+        // Motivate and inspire yourself to achieve your goals
+        String[] motivation = {
+                "Visualize yourself achieving your goals",
+                "Celebrate your accomplishments, no matter how small they are",
+                "Stay organized and focused",
+                "Listen to music that inspires you"
+        };
+    }
+}
